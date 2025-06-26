@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/categories_nav_graph"
+    app:startDestination="@id/allCategoriesFragment">
+
+    <fragment
+        android:id="@+id/addCategoryFragment"
+        android:name="com.example.middleman.AddCategoryFragment"
+        android:label="fragment_add_category"
+        tools:layout="@layout/fragment_add_category" >
+        <action
+            android:id="@+id/action_addCategoryFragment_to_allCategoriesFragment"
+            app:destination="@id/allCategoriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/incomeCategoriesFragment"
+        android:name="com.example.middleman.IncomeCategoriesFragment"
+        android:label="fragment_income_categories"
+        tools:layout="@layout/fragment_income_categories" >
+        <action
+            android:id="@+id/action_incomeCategoriesFragment_to_allCategoriesFragment"
+            app:destination="@id/allCategoriesFragment" />
+        <action
+            android:id="@+id/action_incomeCategoriesFragment_to_createIncomeCategoryFragment"
+            app:destination="@id/createIncomeCategoryFragment" />
+        <action
+            android:id="@+id/action_incomeCategoriesFragment_to_editIncomeCategoryFragment"
+            app:destination="@id/editIncomeCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allCategoriesFragment"
+        android:name="com.example.middleman.AllCategoriesFragment"
+        android:label="fragment_all_categories"
+        tools:layout="@layout/fragment_all_categories" >
+        <action
+            android:id="@+id/action_allCategoriesFragment_to_addCategoryFragment"
+            app:destination="@id/addCategoryFragment" />
+        <action
+            android:id="@+id/action_allCategoriesFragment_to_incomeCategoriesFragment"
+            app:destination="@id/incomeCategoriesFragment" />
+        <action
+            android:id="@+id/action_allCategoriesFragment_to_editExpenseCategoryFragment"
+            app:destination="@id/editExpenseCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createIncomeCategoryFragment"
+        android:name="com.example.middleman.CreateIncomeCategoryFragment"
+        android:label="fragment_create_income_category"
+        tools:layout="@layout/fragment_create_income_category" >
+        <action
+            android:id="@+id/action_createIncomeCategoryFragment_to_incomeCategoriesFragment"
+            app:destination="@id/incomeCategoriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editExpenseCategoryFragment"
+        android:name="com.example.middleman.EditExpenseCategoryFragment"
+        android:label="fragment_edit_expense_category"
+        tools:layout="@layout/fragment_edit_expense_category" >
+        <action
+            android:id="@+id/action_editExpenseCategoryFragment_to_allCategoriesFragment"
+            app:destination="@id/allCategoriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editIncomeCategoryFragment"
+        android:name="com.example.middleman.EditIncomeCategoryFragment"
+        android:label="fragment_edit_income_category"
+        tools:layout="@layout/fragment_edit_income_category" >
+        <action
+            android:id="@+id/action_editIncomeCategoryFragment_to_incomeCategoriesFragment"
+            app:destination="@id/incomeCategoriesFragment" />
+    </fragment>
+</navigation>

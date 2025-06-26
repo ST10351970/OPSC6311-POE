@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom_homeBtn"
+        android:title="Home"
+        android:iconTint="#FFFFFF"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item android:id="@+id/bottom_editBtn"
+        android:title="Edit"
+        android:iconTint="#FFFFFF"
+        android:icon="@drawable/baseline_layers_24"/>
+
+    <item android:id="@+id/bottom_addBtn"
+        android:title="Transaction"
+        android:iconTint="#FFFFFF"
+        android:icon="@drawable/baseline_add_circle_24"/>
+
+    <item android:id="@+id/bottom_goalBtn"
+        android:title="Goal"
+        android:iconTint="#FFFFFF"
+        android:icon="@drawable/baseline_emoji_events_24"/>
+
+    <item android:id="@+id/bottom_reportBtn"
+        android:title="Report"
+        android:iconTint="#FFFFFF"
+        android:icon="@drawable/baseline_insert_chart_24"/>
+
+</menu>

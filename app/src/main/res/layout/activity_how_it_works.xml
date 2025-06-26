@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".HowItWorks">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7851A9"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_revert"
+            android:contentDescription="Back"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="How Middle Man Works"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Placeholder for symmetry -->
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/mm"/>
+
+    </LinearLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/headerLayout"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Welcome Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Middle Man!"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#7851A9"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Description Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Middle Man is your trusted app service that helps it's users achieve their goals and become more aware of their expenditures. Middle Man allows you to take control of your money with ease. We help you track your daily expenses, manage your budget, and save towards your personal goals — all in one place."
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Video Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Learn more about Middle Man:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#7851A9"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Video Thumbnail and Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="24dp"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/thumbnail"
+                    android:contentDescription="Video thumbnail" />
+
+                <Button
+                    android:id="@+id/watchVideoButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="▶ Watch YouTube Explanation Video"
+                    android:textSize="16sp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#7851A9"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <!-- Why use MM -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Why use Middle Man:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#7851A9"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="With our user-friendly interface, you are able to\n• View your remaining balance\n• Categorize your spending into Needs, Wants, and Bills\n• Set savings goals and track your progress\n• Stay motivated with clear, simple visuals\nStart your journey to smarter spending and better saving today!"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Features Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Key Features:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#7851A9"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Register and Login\n• Creating categories\n• Creating an expense/income entry which includes (description, date, and time)\n• Adding a receipt (picture)\n• Creating goals\n• View, update and delete expense/income entry\n• Total amount of income and expenses is displayed\n• Gamefication badges"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Additional feature Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional Features:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#7851A9"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• How does it work link?\n• Colour's of the graphs to make it easy for users to differentiate between the total income and total expenses they have"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Getting Started Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Getting Started:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#7851A9"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Create your account\n2. Create categories in order to fill them with your income or expenses\n3. Complete your transaction\n4. Leave the rest to Middle Man"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="32dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/report_navigation_graph"
+    app:startDestination="@id/expenseReportFragment">
+
+    <fragment
+        android:id="@+id/expenseReportFragment"
+        android:name="com.example.middleman.ExpenseReportFragment"
+        android:label="fragment_expense_report"
+        tools:layout="@layout/fragment_expense_report" >
+        <action
+            android:id="@+id/action_expenseReportFragment_to_incomeReportFragment"
+            app:destination="@id/incomeReportFragment" />
+        <action
+            android:id="@+id/action_expenseReportFragment_to_editExpenseFragment"
+            app:destination="@id/editExpenseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/incomeReportFragment"
+        android:name="com.example.middleman.IncomeReportFragment"
+        android:label="fragment_income_report"
+        tools:layout="@layout/fragment_income_report" >
+        <action
+            android:id="@+id/action_incomeReportFragment_to_expenseReportFragment"
+            app:destination="@id/expenseReportFragment" />
+        <action
+            android:id="@+id/action_incomeReportFragment_to_incomeEditFragment"
+            app:destination="@id/incomeEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editExpenseFragment"
+        android:name="com.example.middleman.EditExpenseFragment"
+        android:label="fragment_edit_expense"
+        tools:layout="@layout/fragment_edit_expense" >
+        <action
+            android:id="@+id/action_editExpenseFragment_to_expenseReportFragment"
+            app:destination="@id/expenseReportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/incomeEditFragment"
+        android:name="com.example.middleman.IncomeEditFragment"
+        android:label="fragment_income_edit"
+        tools:layout="@layout/fragment_income_edit" >
+        <action
+            android:id="@+id/action_incomeEditFragment_to_incomeReportFragment"
+            app:destination="@id/incomeReportFragment" />
+    </fragment>
+</navigation>

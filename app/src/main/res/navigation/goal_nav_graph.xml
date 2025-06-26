@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/goal_nav_graph"
+    app:startDestination="@id/goalsFragment">
+
+    <fragment
+        android:id="@+id/createGoalFragment"
+        android:name="com.example.middleman.CreateGoalFragment"
+        android:label="fragment_create_goal"
+        tools:layout="@layout/fragment_create_goal" >
+        <action
+            android:id="@+id/action_createGoalFragment_to_goalsFragment"
+            app:destination="@id/goalsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalsFragment"
+        android:name="com.example.middleman.GoalsFragment"
+        android:label="fragment_goals"
+        tools:layout="@layout/fragment_goals" >
+        <action
+            android:id="@+id/action_goalsFragment_to_createGoalFragment"
+            app:destination="@id/createGoalFragment" />
+        <action
+            android:id="@+id/action_goalsFragment_to_editGoal"
+            app:destination="@id/editGoal" />
+        <action
+            android:id="@+id/action_goalsFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editGoal"
+        android:name="com.example.middleman.EditGoal"
+        android:label="fragment_edit_goal"
+        tools:layout="@layout/fragment_edit_goal" >
+        <action
+            android:id="@+id/action_editGoal_to_goalsFragment"
+            app:destination="@id/goalsFragment" />
+        <action
+            android:id="@+id/action_editGoal_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.middleman.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_goalsFragment"
+            app:destination="@id/goalsFragment" />
+    </fragment>
+</navigation>

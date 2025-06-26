@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MiddleMan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="accumulated_amount">Accumulated Amount</string>
+</resources>
