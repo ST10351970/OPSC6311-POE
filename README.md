@@ -1,6 +1,12 @@
 # OPSC6311-POE
 Middle Man
 
+ST10311574 Barefile Nompumelelo Lephondo
+
+ST10344257 Nkosinathi Zimkhona Mabena
+
+ST10351970 Lesego Letsapa
+
 Middle Man Tutorial Video
 https://youtu.be/-c4sVoqBn1I?si=kzRi8FGPW1qweMPL
 
